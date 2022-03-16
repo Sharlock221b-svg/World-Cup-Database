@@ -11,7 +11,6 @@ fi
 echo "$($PSQL "TRUNCATE teams,games")"
 
 
-i=1
 
 #reading from the games.csv file.
 cat games.csv | while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS
